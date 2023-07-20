@@ -136,10 +136,10 @@ export const TaskEditor = ({
         </div>
       </form>
       <div className="buttons">
-        <button className="saveButton" onClick={handleCreate}>
+        <button id="saveButton" className="saveButton" onClick={handleCreate}>
           Save
         </button>
-        <button className="clearButton" onClick={handleClear}>
+        <button id="clearButton" className="clearButton" onClick={handleClear}>
           Clear
         </button>
       </div>

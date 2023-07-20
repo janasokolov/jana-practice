@@ -16,7 +16,7 @@ export const TaskList = ({ tasks, onDelete, onSelect }: TaskListProps) => {
   };
   return (
     <div>
-      <div className="task-list">TaskList</div>
+      <div className="task-list">Task List</div>
       <ul className="li-style">
         {tasks.map((t) => (
           <li onClick={(e) => handleSelect(e, t.id)}>
@@ -26,7 +26,11 @@ export const TaskList = ({ tasks, onDelete, onSelect }: TaskListProps) => {
             <p className="field3">{t.status}</p>
             <p className="field4">{t.priority}</p>
             <p className="field5">{t.dueDate.toString()}</p>
-            <button className="deleteButton" onClick={() => onDelete(t.id)}>
+            <button
+              // id="deleteButton"
+              className="deleteButton"
+              onClick={() => onDelete(t.id)}
+            >
               Delete
             </button>
           </li>
